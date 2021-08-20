@@ -1,0 +1,225 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #374261;
+}
+
+a{
+  color: #374261;
+  text-decoration: none;
+}
+
+#app {
+  background-color: #eaefd3;
+  border-radius: 1rem;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.profile {
+  display: flex;
+  margin-top: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.profile-bio {
+  width: 60%;
+}
+
+.profile-bio span{
+  display: inline-block;
+
+}
+
+.profile-bio h2 {
+  font-size: 24px;
+  font-style: italic;
+  color: #15244d;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+}
+
+.img-container {
+  width: 90px;
+  height: 90px;
+}
+
+a {
+  display: block;
+}
+
+.logos-row {
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+.profile-img img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  margin-left: 3rem;
+}
+
+.profile-img {
+  width: 30%;
+}
+
+.section {
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 2rem 0;
+}
+
+#skills {
+  max-width: 450px;
+  width: 45%;
+}
+
+.experience {
+  width: 45%;
+}
+
+.tool {
+  padding: 0.75rem 1.5rem;
+  background-color: #374261;
+  color: white;
+  border-radius: 0.5rem;
+  display: block;
+  text-align: center;
+  max-width: 150px;
+}
+
+.skills_pill {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(144px, 1fr));
+}
+
+.social-links {
+  margin: 1.5rem 0;
+}
+
+.social-links-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  max-width: 300px;
+}
+
+.social-links-2 a {
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  background-color: #374261;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: block;
+}
+
+form {
+  width: 500px;
+}
+
+.highlight{
+  color: #243f8a;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  font-weight: 700;
+  display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+  #app {
+    margin: 1rem;
+
+    width: unset;
+  }
+  h1 {
+    font-size: 1.75em;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(23, 23, 109);
+    font-style: italic;
+  }
+  h2 {
+    font-size: 1.45rem;
+    font-style: italic;
+    color: #15244d;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .profile {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .profile-bio {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .section {
+    flex-direction: column;
+  }
+  .profile-img{
+    margin: 1rem 0 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .profile-img img{
+    margin-left: 0;
+  }
+  #skills,
+  .experience {
+    width: 100%;
+  }
+  form {
+    width: unset;
+  }
+
+  .skills_pill {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  .experience{
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  .section {
+    flex-direction: column;
+  }
+  #skills,
+  .experience {
+    width: 100%;
+  }
+}
