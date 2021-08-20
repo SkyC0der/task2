@@ -17,6 +17,10 @@ body {
   background-color: #374261;
 }
 
+h1,h2,h3{
+  font-weight: 700;
+}
+
 a{
   color: #374261;
   text-decoration: none;
@@ -39,6 +43,7 @@ a{
 
 .profile-bio {
   width: 60%;
+  margin: 2rem 0;
 }
 
 .profile-bio span{
@@ -56,6 +61,22 @@ a{
   flex-direction: column;
 }
 
+h4{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+em{
+  display: flex;
+}
+em a{
+  margin: .25rem .75rem;
+}
+.projects > div p{
+  margin-bottom: 0;
+}
+.projects > div{
+  margin: 1rem 0;
+}
 img {
   width: 100%;
 }
@@ -205,6 +226,9 @@ form {
     width: unset;
   }
 
+  .social-links-2{
+    place-items: center;
+  }
   .skills_pill {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
